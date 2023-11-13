@@ -10,7 +10,7 @@ namespace Ictshop.Models
     {
         // GET: Danhmuc
         Qlbanhang db = new Qlbanhang();
-        public ActionResult Index()
+        public ActionResult DanhmucPartial()
         {
             var danhmuc = db.Hangsanxuats.ToList();
             return PartialView(danhmuc);
